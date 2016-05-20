@@ -1,0 +1,32 @@
+// Mixins
+mixin input(type, label)
+  .input-container
+    input(type='#{type}' id='#{label}' required)
+    label(for='#{label}')=label
+    .bar
+mixin button(text)
+  .button-container
+    button
+      span=text
+
+// Pen Title
+.pen-title
+  h1 Did They Feed
+  span
+    | App <i class='fa fa-code'></i> by Elias Ingea
+    
+.container
+  .card
+  .card
+    h1.title Welcome
+    form
+      +input('text', 'Summoner 1')
+      +input('password', 'Summoner 2')
+      +button('Go')
+  .card.alt
+   form
+      +input('text', 'Username')
+      +input('password', 'Password')
+      +input('password', 'Repeat Password')
+      +button('Next')
+
