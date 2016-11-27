@@ -5,7 +5,7 @@ import collections
 from math import ceil
 app = Flask(__name__)
 app.debug=True
-api = RiotWatcher('caa58d75-ee1d-46b9-b3a8-6f540a5d016d')
+api = RiotWatcher('insert_api_here')
 
 
 @app.route('/', methods=['GET','POST'])
